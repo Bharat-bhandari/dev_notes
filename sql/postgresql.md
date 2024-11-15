@@ -12,3 +12,5 @@ or
 - q
 - \c database_name
 - \dt
+- \conninfo
+- \password
