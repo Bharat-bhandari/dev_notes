@@ -46,3 +46,22 @@ https://1.2.34 same as -> 1.2.34:443
 
 - Open more ports to get request on that port (eg- 8080)
 - It act as virtual firewall
+
+# AWS S3 (Simple Storage Service)
+
+- Objects(video, audio, jpg, png) are store in a cloud storage.
+
+# CDNs
+
+- A Content Delivery Networks (CDN) is a distributed network of servers strategically located around the globe that work together to deliver digital content (like web pages, images, videos, and scripts) to users more efficiently. CDNs reduce the distance between the server and the user, improving website loading times, reliability, and performance.
+
+- Storage - Object Stores
+- Distribution - CDNs
+- When I ask certain video all the time, it cached in my nearest server(pos - point of presence) and then come from there. When not wanted the caches got cleared.
+- This is manage by cloudfront.
+- I don't req to S3 link directly, first I request cloudfront url, that is point to that S3 storage.
+
+> Storage -> 2Gb -> 0.01$
+> Distribution -> 20gb -> 0.01$ , Distribution is always higher
+
+- For Frontend, mp4 files, images, ** Object Stores + CDNs** are better approach
