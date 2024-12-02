@@ -64,4 +64,4 @@ https://1.2.34 same as -> 1.2.34:443
 > Storage -> 2Gb -> 0.01$
 > Distribution -> 20gb -> 0.01$ , Distribution is always higher
 
-- For Frontend, mp4 files, images, ** Object Stores + CDNs** are better approach
+- For Frontend, mp4 files, images, ** Object Stores + CDNs** are better approach 

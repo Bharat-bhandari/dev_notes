@@ -35,16 +35,16 @@
   > Shared across teams and systems.
   > Does not execute directly; it’s just a base to spin up containers.
 
-  2. Docker Container
+2. Docker Container
 
-  - What It Is: A runtime instance of a Docker image, including its filesystem, application code, and processes.
-  - State: Dynamic and mutable (can change at runtime).
-  - Purpose: Runs the actual application. You can start, stop, or delete a container.
-  - Storage: Ephemeral (changes made inside a container are lost unless persisted using volumes).
-    > Usage:
-    > Created and started from an image.
-    > Isolated from the host system and other containers.
-    > Multiple containers can be created from the same image.
+- What It Is: A runtime instance of a Docker image, including its filesystem, application code, and processes.
+- State: Dynamic and mutable (can change at runtime).
+- Purpose: Runs the actual application. You can start, stop, or delete a container.
+- Storage: Ephemeral (changes made inside a container are lost unless persisted using volumes).
+  > Usage:
+  > Created and started from an image.
+  > Isolated from the host system and other containers.
+  > Multiple containers can be created from the same image.
 
 ![Docker Image](https://drive.google.com/uc?id=11hq8olusPU7rIQ0C3-t2P32k7_C810d3)
 
