@@ -23,13 +23,15 @@ npm i -D @types/express @types/cors
 
 #### add scripts to package.json
 
-> "scripts": {
-> "build": "rimraf dist && npx tsc",
-> "prestart": "npm run build",
-> "start": "node dist/index.js",
-> "predev": "npm run build",
-> "dev": "tsc -w & nodemon dist/index.js"
-> }
+```js
+ "scripts": {
+ "build": "rimraf dist && npx tsc",
+ "prestart": "npm run build",
+ "start": "node dist/index.js",
+ "predev": "npm run build",
+ "dev": "tsc -w & nodemon dist/index.js"
+ }
+```
 
 #### make a .env and .gitignore file
 
@@ -73,6 +75,12 @@ npx prisma generate
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
+```
+
+## DATABASE_URL
+
+```sh
+DATABASE_URL="postgresql://postgres:mysecretpassword@localhost:5432/db_name"
 ```
 
 ## AccessToken/secret Token generate key commands
